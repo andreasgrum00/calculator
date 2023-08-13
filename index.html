@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="result"></div>
+        <div id="grid">
+            <div class="grid">
+                <button id="clear" onclick="clearResult()">AC</button>
+                <button class="operator" onclick="addNumber('/')">/</button>
+            </div>
+            <div class="grid">
+                <button class="number" onclick="addNumber(7)">7</button>
+                <button class="number" onclick="addNumber(8)">8</button>
+                <button class="number" onclick="addNumber(9)">9</button>
+                <button class="operator" onclick="addNumber('*')">*</button>
+            </div>
+            <div class="grid">
+                <button class="number" onclick="addNumber(4)">4</button>
+                <button class="number" onclick="addNumber(5)">5</button>
+                <button class="number" onclick="addNumber(6)">6</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="grid">
+                <button class="number" onclick="addNumber(1)">1</button>
+                <button class="number" onclick="addNumber(2)">2</button>
+                <button class="number" onclick="addNumber(3)">3</button>
+                <button class="operator" onclick="addNumber('+')">+</button>
+            </div>
+            <div class="grid">
+                <button class="number" id="zero" onclick="addNumber(0)">0</button>
+                <button class="number" onclick="addNumber(',')">,</button>
+                <button class="operator" id="equals" onclick="calc()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="calc-js/calc.latest.min.js"></script>
+</body>
+</html>
